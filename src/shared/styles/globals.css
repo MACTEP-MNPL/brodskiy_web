@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Montserrat-Bold.woff2") format("woff2");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/Montserrat-Medium.woff2") format("woff2");
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/Montserrat-Light.woff2") format("woff2");
+  font-display: fallback;
+}
+
+body {
+  @apply bg-BLACK_400 text-white;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+.max-width {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide::-webkit-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.input::-webkit-inner-spin-button,
+.input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input:focus {
+  outline: none;
+  border: 0px solid transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #635f66;
+  -webkit-box-shadow: 0 0 0px 1000px #211c25 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

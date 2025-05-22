@@ -1,0 +1,32 @@
+.custom-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  border-bottom: 0.5px solid transparent;
+  background: linear-gradient(
+      45deg,
+      rgba(216, 137, 26, 1),
+      rgba(40, 217, 170, 1)
+    )
+    border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+@media (min-width: 768px) {
+  .custom-border::before {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
