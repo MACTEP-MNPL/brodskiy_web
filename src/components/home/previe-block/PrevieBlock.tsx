@@ -2,7 +2,7 @@ import { CourseMobuleDesktop } from "@/components/course";
 import { PrimaryButton } from "@/shared/ui/buttons";
 import { BigTitle, SubTitle } from "@/shared/ui/titles";
 import Image from "next/image";
-import { TG_LINK } from "@/shared/const/social";
+import { BOT_LINK } from "@/shared/const/social";
 
 export function PrevieBlock() {
   return (
@@ -39,7 +39,7 @@ export function PrevieBlock() {
         alt="coin"
       />
       <div className="mb-[40px] md:px-[40px] md:mt-auto">
-        <PrimaryButton text="Оплатить без комиссии" href={TG_LINK} />
+        <PrimaryButton text="Оплатить без комиссии" href={BOT_LINK} />
       </div>
       <div
         style={{

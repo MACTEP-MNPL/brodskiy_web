@@ -8,7 +8,7 @@ import { CompanyIcon } from "@/shared/ui/icons/CompanyIcon";
 import { useState } from "react";
 import { NavMenuMobile } from "./ui/nav-menu/NavMenuMobile";
 import "./styles/border-color.css";
-import { TG_LINK } from "@/shared/const/social";
+import { BOT_LINK } from "@/shared/const/social";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +30,7 @@ export function Header() {
             <MediaLinks />
             <PrimaryButton
               padding="px-[29px] py-[11px]"
-              href={TG_LINK}
+              href={BOT_LINK}
               text="Оставить заявку"
             />
           </div>
